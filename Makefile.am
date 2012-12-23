@@ -12,7 +12,8 @@ SUBDIRS =					\
 
 
 EXTRA_DIST =					\
-	version.sh
+	version.sh				\
+	kroki-stats.spec
 
 
 rpm: dist

@@ -61,6 +61,7 @@ README=$srcdir/README
 AC_CACHE_SAVE
 
 AC_CONFIG_FILES([
+kroki-stats.spec
 Makefile
 src/Makefile
 ])
