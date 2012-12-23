@@ -64,6 +64,7 @@ AC_CONFIG_FILES([
 kroki-stats.spec
 Makefile
 src/Makefile
+test/Makefile
 ])
 AC_CONFIG_FILES([stamp-h], [echo timestamp > stamp-h])
 
