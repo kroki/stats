@@ -22,6 +22,7 @@
 #endif
 #include "kroki/bits/module.h"
 #include "stats_file.h"
+#include "pthread_weak.h"
 #include "syscall.h"
 #include <kroki/error.h>
 #include <sys/file.h>
@@ -34,7 +35,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <pthread.h>
 #include <errno.h>
 
 

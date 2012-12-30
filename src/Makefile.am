@@ -15,16 +15,13 @@ lib_LTLIBRARIES =				\
 
 libkroki_stats_la_SOURCES =			\
 	libkroki-stats.c			\
+	pthread_weak.c				\
+	pthread_weak.h				\
 	syscall.c				\
 	syscall.h
 
 
-libkroki_stats_la_CFLAGS =			\
-	-pthread
-
-
 libkroki_stats_la_LDFLAGS =			\
-	-pthread				\
 	-Wl,-znodlopen
 
 
