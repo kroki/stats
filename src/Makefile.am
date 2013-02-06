@@ -1,0 +1,41 @@
+## Process this file with automake to produce Makefile.in.
+##
+
+include $(top_srcdir)/Makefile.common
+
+
+nobase_include_HEADERS =			\
+	kroki/stats.h				\
+	kroki/bits/module.h
+
+
+lib_LTLIBRARIES =				\
+	libkroki-stats.la
+
+
+libkroki_stats_la_SOURCES =			\
+	libkroki-stats.c			\
+	syscall.c				\
+	syscall.h
+
+
+libkroki_stats_la_CFLAGS =			\
+	-pthread
+
+
+libkroki_stats_la_LDFLAGS =			\
+	-pthread				\
+	-Wl,-znodlopen
+
+
+## See 'info libtool versioning updating' for how to update version number.
+libkroki_stats_la_LDFLAGS +=			\
+	-version-info 0:0:0
+
+
+bin_PROGRAMS =					\
+	kroki-stats
+
+
+noinst_HEADERS =				\
+	stats_file.h

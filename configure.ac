@@ -30,6 +30,8 @@ AC_CONFIG_HEADERS([src/config.h])
 AC_CONFIG_AUX_DIR([auto])
 AC_CONFIG_MACRO_DIR([m4])
 
+AC_USE_SYSTEM_EXTENSIONS
+
 AM_INIT_AUTOMAKE([1.11.1 -Wall foreign no-define subdir-objects
                   dist-bzip2 no-dist-gzip color-tests])
 
@@ -47,6 +49,9 @@ AC_PROG_MAKE_SET
 AC_PROG_CC
 AC_PROG_CC_C99
 
+AC_CHECK_HEADER([kroki/error.h], [],
+                [AC_MSG_ERROR([kroki/error.h is required])])
+
 AC_SUBST([RPM_VERSION], [`echo VERSION_STRING | sed -e 's/-.*//'`])
 AC_SUBST([RPM_RELEASE], [`echo VERSION_STRING | sed -e 's/[[^-]]*-\?//'`])
 AC_DEFINE([PACKAGE_COPYRIGHT], ["kroki_stats_copyright"], [Copyright string.])
@@ -57,6 +62,7 @@ AC_CACHE_SAVE
 
 AC_CONFIG_FILES([
 Makefile
+src/Makefile
 ])
 AC_CONFIG_FILES([stamp-h], [echo timestamp > stamp-h])
 
