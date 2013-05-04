@@ -6,7 +6,7 @@ include $(top_srcdir)/Makefile.common
 
 nobase_include_HEADERS =			\
 	kroki/stats.h				\
-	kroki/bits/module.h
+	kroki/bits/stats-module.h
 
 
 lib_LTLIBRARIES =				\

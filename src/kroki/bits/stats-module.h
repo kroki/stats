@@ -17,8 +17,8 @@
   along with kroki/stats.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef KROKI_STATS_BITS_MODULE_H
-#define KROKI_STATS_BITS_MODULE_H 1
+#ifndef KROKI_STATS_BITS_STATS_MODULE_H
+#define KROKI_STATS_BITS_STATS_MODULE_H 1
 
 #include <stdint.h>
 
@@ -61,4 +61,4 @@ kroki_stats_atfork_child(void);
 #endif  /* __cplusplus */
 
 
-#endif  /* ! KROKI_STATS_BITS_MODULE_H */
+#endif  /* ! KROKI_STATS_BITS_STATS_MODULE_H */

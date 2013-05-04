@@ -20,7 +20,7 @@
 #ifdef HAVE_CONFIG_H
 #include "config.h"
 #endif
-#include "kroki/bits/module.h"
+#include "kroki/bits/stats-module.h"
 #include "stats_file.h"
 #include "pthread_weak.h"
 #include "syscall.h"

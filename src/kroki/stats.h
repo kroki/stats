@@ -204,7 +204,7 @@
 #ifndef KROKI_STATS_H
 #define KROKI_STATS_H 1
 
-#include "bits/module.h"
+#include "bits/stats-module.h"
 
 
 #define kroki_stats(name)  _kroki_stats_eval(#name, __COUNTER__)
